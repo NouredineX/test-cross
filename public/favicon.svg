@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <path d="M50 15C32 15 18 29 18 47V85H32V47C32 37 40 29 50 29C60 29 68 37 68 47V85H82V47C82 29 68 15 50 15Z" fill="url(#duneGradFav)" />
+  <path d="M50 10C51.5 25 65 38.5 80 40C65 41.5 51.5 55 50 70C48.5 55 35 41.5 20 40C35 38.5 48.5 25 50 10Z" fill="#C8A96E" />
+  <defs>
+    <linearGradient id="duneGradFav" x1="18" y1="50" x2="82" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A8894E" />
+      <stop offset="50%" stop-color="#C8A96E" />
+      <stop offset="100%" stop-color="#DABE8A" />
+    </linearGradient>
+  </defs>
+</svg>

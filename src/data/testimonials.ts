@@ -1,0 +1,58 @@
+import type { Testimonial } from '../types';
+
+export const testimonials: Testimonial[] = [
+  {
+    id: 'test-1',
+    name: 'Sarah Thompson',
+    country: 'United Kingdom',
+    rating: 5,
+    text: 'An absolutely incredible experience! The desert camp under the stars was the highlight of our trip. Our guide was knowledgeable, friendly, and made us feel so welcome. We cannot recommend We Travel Morocco enough!',
+    textFr: 'Une expérience absolument incroyable ! Le camp dans le désert sous les étoiles a été le point fort de notre voyage. Notre guide était compétent, amical et nous a fait sentir très bienvenus.',
+    textEs: '¡Una experiencia absolutamente increíble! El campamento en el desierto bajo las estrellas fue lo mejor de nuestro viaje. Nuestro guía fue conocedor, amable y nos hizo sentir muy bienvenidos.',
+  },
+  {
+    id: 'test-2',
+    name: 'Pierre Dubois',
+    country: 'France',
+    rating: 5,
+    text: 'We booked a 7-day tour and it exceeded all our expectations. Every detail was perfectly organized. The landscapes are breathtaking and the Berber hospitality is genuine. A trip of a lifetime!',
+    textFr: 'Nous avons réservé un tour de 7 jours et il a dépassé toutes nos attentes. Chaque détail était parfaitement organisé. Les paysages sont à couper le souffle et l\'hospitalité berbère est authentique.',
+    textEs: 'Reservamos un tour de 7 días y superó todas nuestras expectativas. Cada detalle estaba perfectamente organizado. Los paisajes son impresionantes y la hospitalidad bereber es genuina.',
+  },
+  {
+    id: 'test-3',
+    name: 'Emily & James Carter',
+    country: 'United States',
+    rating: 5,
+    text: 'From Marrakech to the Sahara, every moment was magical. The camel ride at sunset, the stargazing in the desert, the food — everything was perfect. Thank you for an unforgettable honeymoon!',
+    textFr: 'De Marrakech au Sahara, chaque moment était magique. La balade à chameau au coucher du soleil, l\'observation des étoiles, la nourriture — tout était parfait. Merci pour une lune de miel inoubliable !',
+    textEs: 'Desde Marrakech al Sahara, cada momento fue mágico. El paseo en camello al atardecer, la observación de estrellas, la comida — todo fue perfecto. ¡Gracias por una luna de miel inolvidable!',
+  },
+  {
+    id: 'test-4',
+    name: 'María García',
+    country: 'Spain',
+    rating: 5,
+    text: 'The best travel agency we have ever used. They customized our tour to fit exactly what we wanted. The driver was professional, the accommodations were excellent, and the price was very fair.',
+    textFr: 'La meilleure agence de voyage que nous ayons jamais utilisée. Ils ont personnalisé notre tour exactement comme nous le voulions. Le chauffeur était professionnel et les hébergements excellents.',
+    textEs: 'La mejor agencia de viajes que hemos usado. Personalizaron nuestro tour exactamente como queríamos. El conductor fue profesional, los alojamientos excelentes y el precio muy justo.',
+  },
+  {
+    id: 'test-5',
+    name: 'Thomas Weber',
+    country: 'Germany',
+    rating: 4,
+    text: 'Great tour of Morocco! The Chefchaouen day trip from Fes was stunning — the blue city is even more beautiful in person. Very well organized and our guide shared wonderful stories about Moroccan culture.',
+    textFr: 'Super tour du Maroc ! L\'excursion à Chefchaouen depuis Fès était magnifique — la ville bleue est encore plus belle en personne. Très bien organisé.',
+    textEs: 'Gran tour por Marruecos. La excursión a Chefchaouen desde Fez fue impresionante — la ciudad azul es aún más hermosa en persona. Muy bien organizado.',
+  },
+  {
+    id: 'test-6',
+    name: 'Akiko Tanaka',
+    country: 'Japan',
+    rating: 5,
+    text: 'Morocco was a dream destination and We Travel Morocco made it perfect. The Sahara desert sunset was the most beautiful thing I have ever seen. The whole team was incredibly caring and attentive.',
+    textFr: 'Le Maroc était une destination de rêve et We Travel Morocco l\'a rendue parfaite. Le coucher de soleil dans le Sahara était la plus belle chose que j\'aie jamais vue.',
+    textEs: 'Marruecos era un destino soñado y We Travel Morocco lo hizo perfecto. La puesta de sol en el Sahara fue lo más hermoso que he visto en mi vida.',
+  },
+];

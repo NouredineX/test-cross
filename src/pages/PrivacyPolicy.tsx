@@ -14,7 +14,7 @@ export const PrivacyPolicy: React.FC = () => {
     if (currentLang === 'fr') {
       return (
         <div className="pro-article-content">
-          <p className="lead">Chez We Travel Morocco, nous accordons une grande importance à la confidentialité de vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre site web.</p>
+          <p className="lead">Chez Travelling Through Morocco, nous accordons une grande importance à la confidentialité de vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre site web.</p>
           
           <h2>1. Informations que nous collectons</h2>
           <p>Nous collectons les informations que vous nous fournissez directement lorsque vous remplissez un formulaire de contact, effectuez une réservation ou concevez un itinéraire personnalisé sur notre carte interactive. Ces informations incluent :</p>
@@ -51,8 +51,8 @@ export const PrivacyPolicy: React.FC = () => {
           <h2>6. Contactez-nous</h2>
           <p>Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter :</p>
           <div className="value-box">
-            <strong>We Travel Morocco Support</strong>
-            <p>Email : wetravelmoroccoteam@gmail.com</p>
+            <strong>Travelling Through Morocco Support</strong>
+            <p>Email : contact@travellingthroughmorocco.com</p>
             <p>Adresse : Meknès, Maroc</p>
           </div>
         </div>
@@ -62,7 +62,7 @@ export const PrivacyPolicy: React.FC = () => {
     if (currentLang === 'es') {
       return (
         <div className="pro-article-content">
-          <p className="lead">En We Travel Morocco, valoramos enormemente la privacidad de sus datos personales. Esta política de privacidad explica cómo recopilamos, utilizamos y protegemos su información cuando utiliza nuestro sitio web.</p>
+          <p className="lead">En Travelling Through Morocco, valoramos enormemente la privacidad de sus datos personales. Esta política de privacidad explica cómo recopilamos, utilizamos y protegemos su información cuando utiliza nuestro sitio web.</p>
           
           <h2>1. Información que recopilamos</h2>
           <p>Recopilamos la información que nos proporciona directamente cuando completa un formulario de contacto, realiza una reserva o diseña un itinerario personalizado en nuestro mapa interactivo. Esta información incluye:</p>
@@ -99,8 +99,8 @@ export const PrivacyPolicy: React.FC = () => {
           <h2>6. Contáctenos</h2>
           <p>Si tiene alguna pregunta sobre esta política de privacidad, puede ponerse en contacto con nosotros:</p>
           <div className="value-box">
-            <strong>Soporte de We Travel Morocco</strong>
-            <p>Email: wetravelmoroccoteam@gmail.com</p>
+            <strong>Soporte de Travelling Through Morocco</strong>
+            <p>Email: contact@travellingthroughmorocco.com</p>
             <p>Dirección: Meknes, Marruecos</p>
           </div>
         </div>
@@ -110,7 +110,7 @@ export const PrivacyPolicy: React.FC = () => {
     // Default English
     return (
       <div className="pro-article-content">
-        <p className="lead">At We Travel Morocco, we highly value the privacy of your personal data. This privacy policy explains how we collect, use, and protect your information when you use our website.</p>
+        <p className="lead">At Travelling Through Morocco, we highly value the privacy of your personal data. This privacy policy explains how we collect, use, and protect your information when you use our website.</p>
         
         <h2>1. Information We Collect</h2>
         <p>We collect information that you directly provide to us when filling out a contact form, making a booking request, or building a custom route on our interactive map. This information includes:</p>
@@ -147,8 +147,8 @@ export const PrivacyPolicy: React.FC = () => {
         <h2>6. Contact Us</h2>
         <p>If you have any questions regarding this privacy policy, you can contact us:</p>
         <div className="value-box">
-          <strong>We Travel Morocco Support</strong>
-          <p>Email: wetravelmoroccoteam@gmail.com</p>
+          <strong>Travelling Through Morocco Support</strong>
+          <p>Email: contact@travellingthroughmorocco.com</p>
           <p>Address: Meknes, Morocco</p>
         </div>
       </div>

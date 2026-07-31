@@ -28,6 +28,9 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
           <img 
             src={`/images/${post.image}`} 
             alt={title}
+            width="400"
+            height="200"
+            loading="lazy"
             onError={(e) => {
               (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&q=80';
             }}

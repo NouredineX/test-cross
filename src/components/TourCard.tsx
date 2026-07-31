@@ -27,6 +27,9 @@ export const TourCard: React.FC<TourCardProps> = ({ tour }) => {
         <img 
           src={`/images/${tour.image}`} 
           alt={title} 
+          width="380"
+          height="220"
+          loading="lazy"
           onError={(e) => {
             // Simple placeholder styling if image fails to load
             (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=600&q=80';

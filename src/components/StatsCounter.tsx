@@ -7,17 +7,17 @@ interface StatConfig {
   labelKey: string;
 }
 
+const stats: StatConfig[] = [
+  { target: 500, suffix: '+', labelKey: 'stats.tours' },
+  { target: 1200, suffix: '+', labelKey: 'stats.clients' },
+  { target: 10, suffix: '+', labelKey: 'stats.years' },
+  { target: 15, suffix: '+', labelKey: 'stats.destinations' }
+];
+
 export const StatsCounter: React.FC = () => {
   const { t } = useTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   const [hasRun, setHasRun] = useState(false);
-
-  const stats: StatConfig[] = [
-    { target: 500, suffix: '+', labelKey: 'stats.tours' },
-    { target: 1200, suffix: '+', labelKey: 'stats.clients' },
-    { target: 10, suffix: '+', labelKey: 'stats.years' },
-    { target: 15, suffix: '+', labelKey: 'stats.destinations' }
-  ];
 
   const [counts, setCounts] = useState<number[]>([0, 0, 0, 0]);
 
@@ -61,7 +61,7 @@ export const StatsCounter: React.FC = () => {
         observer.unobserve(currentRef);
       }
     };
-  }, [hasRun, stats]);
+  }, [hasRun]);
 
   return (
     <div className="stats-bar" ref={containerRef} id="stats-counter-bar">

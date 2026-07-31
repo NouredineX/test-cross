@@ -145,7 +145,7 @@ export const BlogPost: React.FC = () => {
 
         <div class="expert-verdict-new">
           <h3>The Final Verdict</h3>
-          <p>Whether you have 3 days or 15 days, Morocco offers a rich, diverse experience. Let our team at We Travel Morocco customize your itinerary and turn your dream vacation into a reality.</p>
+          <p>Whether you have 3 days or 15 days, Morocco offers a rich, diverse experience. Let our team at Travelling Through Morocco customize your itinerary and turn your dream vacation into a reality.</p>
         </div>
       </div>
     `;

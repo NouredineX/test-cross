@@ -46,7 +46,7 @@ export const Contact: React.FC = () => {
                 </div>
 
                 {/* Phone Card */}
-                <a href="https://wa.me/212708228026?text=Hello%20We%20Travel%20Morocco%2C%20I%20would%20like%20to%20inquire%20about%20your%20tours!" target="_blank" rel="noopener noreferrer" className="glass-card contact-info-card" id="contact-card-phone" style={{ textDecoration: 'none', display: 'block', color: 'inherit' }}>
+                <a href="https://wa.me/212708228026?text=Hello%20Travelling%20Through%20Morocco%2C%20I%20would%20like%20to%20inquire%20about%20your%20tours!" target="_blank" rel="noopener noreferrer" className="glass-card contact-info-card" id="contact-card-phone" style={{ textDecoration: 'none', display: 'block', color: 'inherit' }}>
                   <div className="icon">📞</div>
                   <h4>{t('contact.phoneLabel')}</h4>
                   <p>+212 708-228026</p>
@@ -54,10 +54,10 @@ export const Contact: React.FC = () => {
                 </a>
 
                 {/* Email Card */}
-                <a href="mailto:wetravelmoroccoteam@gmail.com?subject=Inquiry%20-%20We%20Travel%20Morocco" className="glass-card contact-info-card" id="contact-card-email" style={{ textDecoration: 'none', display: 'block', color: 'inherit' }}>
+                <a href="mailto:contact@travellingthroughmorocco.com?subject=Inquiry%20-%20Travelling%20Through%20Morocco" className="glass-card contact-info-card" id="contact-card-email" style={{ textDecoration: 'none', display: 'block', color: 'inherit' }}>
                   <div className="icon">✉️</div>
                   <h4>{t('contact.emailLabel')}</h4>
-                  <p>wetravelmoroccoteam@gmail.com</p>
+                  <p>contact@travellingthroughmorocco.com</p>
                 </a>
 
                 {/* Hours Card */}

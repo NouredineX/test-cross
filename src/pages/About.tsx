@@ -67,7 +67,7 @@ export const About: React.FC = () => {
         <div className="container">
           <ScrollAnimation animation="fade-in">
             <div className="glass-card" style={{ padding: '3rem', maxWidth: '600px', margin: '0 auto' }}>
-              <h3 style={{ marginBottom: '1rem' }}>We Travel Morocco TripAdvisor Rating</h3>
+              <h3 style={{ marginBottom: '1rem' }}>Travelling Through Morocco TripAdvisor Rating</h3>
               <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
                 <span style={{ fontSize: '2.5rem', color: '#00AF87' }}>⬤⬤⬤⬤⬤</span>
                 <span style={{ fontSize: '1.8rem', fontWeight: 700 }}>5.0</span>

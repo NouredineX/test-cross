@@ -133,7 +133,7 @@ export const getTravelAdvisoryText = (focusKeyword: string, lang: string): strin
   if (lang === 'fr') {
     return `
       <h2>Conseils de Voyage Importants pour votre ${focusKeyword}</h2>
-      <p>Pour tirer le meilleur parti de votre voyage au Maroc, voici quelques recommandations de notre agence locale We Travel Morocco. Préparez vos bagages avec soin, car les températures varient énormément entre le jour et la nuit dans le désert ou en altitude.</p>
+      <p>Pour tirer le meilleur parti de votre voyage au Maroc, voici quelques recommandations de notre agence locale Travelling Through Morocco. Préparez vos bagages avec soin, car les températures varient énormément entre le jour et la nuit dans le désert ou en altitude.</p>
       
       <h3>1. Que faut-il emporter dans le désert ?</h3>
       <p>Nous vous conseillons d'apporter des vêtements légers et respirants pour la journée, mais n'oubliez pas des vêtements chauds pour les nuits fraîches dans le désert. Un chapeau, des lunettes de soleil et une crème solaire haute protection sont indispensables pour faire face au soleil du Sahara. Une gourde réutilisable est également recommandée pour rester hydraté.</p>
@@ -149,7 +149,7 @@ export const getTravelAdvisoryText = (focusKeyword: string, lang: string): strin
   if (lang === 'es') {
     return `
       <h2>Consejos Importantes para su viaje de ${focusKeyword}</h2>
-      <p>Para aprovechar al máximo su experiencia en Marruecos, aquí tiene algunas recomendaciones de nuestra agencia de viajes We Travel Morocco. Prepare sus maletas con cuidado para disfrutar de una estancia cómoda y segura.</p>
+      <p>Para aprovechar al máximo su experiencia en Marruecos, aquí tiene algunas recomendaciones de nuestra agencia de viajes Travelling Through Morocco. Prepare sus maletas con cuidado para disfrutar de una estancia cómoda y segura.</p>
 
       <h3>1. ¿Qué llevar al Desierto del Sahara?</h3>
       <p>Recomendamos llevar ropa ligera y cómoda durante el día, pero no olvide abrigarse bien por la noche, ya que la temperatura en el desierto puede bajar drásticamente. Lleve gafas de sol, protector solar de alto factor y un sombrero para protegerse del sol. Es importante mantenerse hidratado durante todo el viaje.</p>

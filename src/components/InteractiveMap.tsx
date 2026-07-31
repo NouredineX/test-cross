@@ -54,7 +54,7 @@ export const InteractiveMap: React.FC = () => {
     const routeString = selectedCities.map(c => c.name).join(' > ');
 
     const message = [
-      '*New Custom Tour Request - We Travel Morocco*',
+      '*New Custom Tour Request - Travelling Through Morocco*',
       '',
       'Hello! I am interested in booking a custom Morocco tour with the following route:',
       '',

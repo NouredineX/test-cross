@@ -67,9 +67,7 @@ export const Home: React.FC = () => {
       {/* Stats Counter Section */}
       <section className="section" style={{ padding: '3rem 0' }} id="stats-section">
         <div className="container">
-          <ScrollAnimation animation="fade-in">
-            <StatsCounter />
-          </ScrollAnimation>
+          <StatsCounter />
         </div>
       </section>
 
@@ -91,7 +89,14 @@ export const Home: React.FC = () => {
                 <ScrollAnimation animation="scale-in" delay={idx * 100} key={cat.id} id={`cat-card-${cat.id}`}>
                   <div className="glass-card" style={{ overflow: 'hidden', height: '100%', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ height: '180px', overflow: 'hidden' }}>
-                      <img src={cat.image} alt={catTitle} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img 
+                        src={cat.image} 
+                        alt={catTitle} 
+                        width="300"
+                        height="180"
+                        loading="lazy"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                      />
                     </div>
                     <div style={{ padding: '1.5rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
                       <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem' }}>{catTitle}</h3>

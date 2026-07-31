@@ -24,6 +24,9 @@ export const DestinationCard: React.FC<DestinationCardProps> = ({ destination, o
         <img 
           src={`/images/${destination.image}`} 
           alt={name} 
+          width="400"
+          height="300"
+          loading="lazy"
           onError={(e) => {
             (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80';
           }}

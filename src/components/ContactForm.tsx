@@ -23,12 +23,12 @@ export const ContactForm: React.FC = () => {
     if (selectedTour) {
       setFormData(prev => ({
         ...prev,
-        message: `Hello We Travel Morocco, I would like to request more information or book the "${selectedTour.replace(/-/g, ' ')}" tour.`
+        message: `Hello Travelling Through Morocco, I would like to request more information or book the "${selectedTour.replace(/-/g, ' ')}" tour.`
       }));
     } else if (customRoute) {
       setFormData(prev => ({
         ...prev,
-        message: `Hello We Travel Morocco, I have built a custom route on your website and would like a quote: ${customRoute}`
+        message: `Hello Travelling Through Morocco, I have built a custom route on your website and would like a quote: ${customRoute}`
       }));
     }
   }, [searchParams]);

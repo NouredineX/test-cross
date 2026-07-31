@@ -42,19 +42,21 @@ export const Navbar: React.FC = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`} id="main-header">
       <div className="container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu} id="logo-link" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-          <svg width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ transition: 'transform 0.3s ease' }} className="logo-svg">
-            <path d="M50 15C32 15 18 29 18 47V85H32V47C32 37 40 29 50 29C60 29 68 37 68 47V85H82V47C82 29 68 15 50 15Z" fill="url(#duneGrad)" />
-            <path d="M50 10C51.5 25 65 38.5 80 40C65 41.5 51.5 55 50 70C48.5 55 35 41.5 20 40C35 38.5 48.5 25 50 10Z" fill="var(--color-primary)" />
-            <defs>
-              <linearGradient id="duneGrad" x1="18" y1="50" x2="82" y2="50" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stopColor="var(--color-primary-dark)" />
-                <stop offset="50%" stopColor="var(--color-primary)" />
-                <stop offset="100%" stopColor="var(--color-primary-light)" />
-              </linearGradient>
-            </defs>
-          </svg>
-          <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: '1.35rem', letterSpacing: '0.5px', display: 'flex', alignItems: 'center' }}>
-            <span style={{ color: 'var(--color-primary)' }}>We Travel</span>
+          <img 
+            src="/images/logo-icon.png" 
+            alt="Travelling Through Morocco Logo" 
+            width="31"
+            height="38"
+            style={{ 
+              height: '38px', 
+              width: 'auto',
+              objectFit: 'contain',
+              filter: theme === 'dark' ? 'brightness(0) invert(1)' : 'none',
+              transition: 'filter 0.3s ease'
+            }} 
+          />
+          <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: '1.2rem', letterSpacing: '0.5px', display: 'flex', alignItems: 'center' }}>
+            <span style={{ color: 'var(--color-primary)' }}>Travelling Through</span>
             <span style={{ color: 'var(--text-primary)', marginLeft: '4.5px' }}>Morocco</span>
           </span>
         </Link>

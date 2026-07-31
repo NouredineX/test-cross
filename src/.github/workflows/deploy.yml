@@ -3,7 +3,7 @@ name: Deploy Antigravity App
 on:
   push:
     branches:
-      - main  # أو master حسب اسم الفرع الرئيسي لديك
+      - main
 
 jobs:
   build-and-deploy:

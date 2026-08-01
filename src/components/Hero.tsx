@@ -20,8 +20,7 @@ export const Hero: React.FC = () => {
           alt="Sahara Desert Dunes Parallax" 
           width="1920"
           height="1280"
-          // @ts-expect-error fetchpriority is a standard HTML attribute for performance but not fully typed in all React versions
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <div className="hero-overlay"></div>
       </div>

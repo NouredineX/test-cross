@@ -138,24 +138,6 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Interactive Map Preview / Banner */}
-      <section className="section" id="map-preview-section" style={{ background: 'var(--bg-dark-2)' }}>
-        <div className="container" style={{ textAlign: 'center' }}>
-          <ScrollAnimation animation="scale-in">
-            <div className="glass-card" style={{ padding: '3.5rem 2rem', maxWidth: '800px', margin: '0 auto' }}>
-              <span className="section-subtitle" style={{ color: 'var(--color-accent)' }}>{t('sections.mapSubtitle')}</span>
-              <h2 style={{ marginBottom: '1rem' }}>{t('sections.mapTitle')}</h2>
-              <p style={{ marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
-                {t('sections.mapDesc')}
-              </p>
-              <Link to="/tours" className="btn btn-accent btn-lg" id="go-build-trip-btn">
-                🗺️ {t('sections.ctaButton')}
-              </Link>
-            </div>
-          </ScrollAnimation>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section className="section" id="testimonials-section">
         <div className="container">
@@ -176,8 +158,8 @@ export const Home: React.FC = () => {
             <div className="cta-content">
               <h2>{t('sections.ctaTitle')}</h2>
               <p>{t('sections.ctaDesc')}</p>
-              <Link to="/contact" className="btn btn-primary btn-lg" id="cta-contact-btn">
-                ✉️ {t('sections.ctaButton')}
+              <Link to="/tours" className="btn btn-primary btn-lg" id="cta-contact-btn">
+                🗺️ {t('sections.ctaButton')}
               </Link>
             </div>
           </ScrollAnimation>

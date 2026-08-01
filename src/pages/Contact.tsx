@@ -54,10 +54,10 @@ export const Contact: React.FC = () => {
                 </a>
 
                 {/* Email Card */}
-                <a href="mailto:contact@travellingthroughmorocco.com?subject=Inquiry%20-%20Travelling%20Through%20Morocco" className="glass-card contact-info-card" id="contact-card-email" style={{ textDecoration: 'none', display: 'block', color: 'inherit' }}>
+                <a href="mailto:travellingthroughmorocco@gmail.com?subject=Inquiry%20-%20Travelling%20Through%20Morocco" className="glass-card contact-info-card" id="contact-card-email" style={{ textDecoration: 'none', display: 'block', color: 'inherit' }}>
                   <div className="icon">✉️</div>
                   <h4>{t('contact.emailLabel')}</h4>
-                  <p>contact@travellingthroughmorocco.com</p>
+                  <p>travellingthroughmorocco@gmail.com</p>
                 </a>
 
                 {/* Hours Card */}

@@ -55,9 +55,9 @@ export const Navbar: React.FC = () => {
               transition: 'filter 0.3s ease'
             }} 
           />
-          <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: '1.2rem', letterSpacing: '0.5px', display: 'flex', alignItems: 'center' }}>
-            <span style={{ color: 'var(--color-primary)' }}>Travelling Through</span>
-            <span style={{ color: 'var(--text-primary)', marginLeft: '4.5px' }}>Morocco</span>
+          <span className="logo-text">
+            <span className="logo-part-1">Travelling Through</span>
+            <span className="logo-part-2">Morocco</span>
           </span>
         </Link>
 

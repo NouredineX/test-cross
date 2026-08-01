@@ -52,7 +52,7 @@ export const PrivacyPolicy: React.FC = () => {
           <p>Si vous avez des questions concernant cette politique de confidentialité, vous pouvez nous contacter :</p>
           <div className="value-box">
             <strong>Travelling Through Morocco Support</strong>
-            <p>Email : contact@travellingthroughmorocco.com</p>
+            <p>Email : travellingthroughmorocco@gmail.com</p>
             <p>Adresse : Meknès, Maroc</p>
           </div>
         </div>
@@ -100,7 +100,7 @@ export const PrivacyPolicy: React.FC = () => {
           <p>Si tiene alguna pregunta sobre esta política de privacidad, puede ponerse en contacto con nosotros:</p>
           <div className="value-box">
             <strong>Soporte de Travelling Through Morocco</strong>
-            <p>Email: contact@travellingthroughmorocco.com</p>
+            <p>Email: travellingthroughmorocco@gmail.com</p>
             <p>Dirección: Meknes, Marruecos</p>
           </div>
         </div>
@@ -148,7 +148,7 @@ export const PrivacyPolicy: React.FC = () => {
         <p>If you have any questions regarding this privacy policy, you can contact us:</p>
         <div className="value-box">
           <strong>Travelling Through Morocco Support</strong>
-          <p>Email: contact@travellingthroughmorocco.com</p>
+          <p>Email: travellingthroughmorocco@gmail.com</p>
           <p>Address: Meknes, Morocco</p>
         </div>
       </div>

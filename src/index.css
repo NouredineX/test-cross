@@ -426,6 +426,24 @@ p {
   color: var(--color-primary);
 }
 
+.logo-text {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-part-1 {
+  color: var(--color-primary);
+}
+
+.logo-part-2 {
+  color: var(--text-primary);
+  margin-left: 4.5px;
+}
+
 .navbar-links {
   display: flex;
   align-items: center;
@@ -1594,6 +1612,16 @@ p {
   .hero-content h1 {
     font-size: 2.2rem;
   }
+
+  .map-container {
+    min-height: 350px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-text {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1609,6 +1637,20 @@ p {
   .btn-lg {
     padding: 1rem 2rem;
     font-size: 0.95rem;
+  }
+
+  #map-action-buttons {
+    flex-direction: column;
+    gap: 0.5rem !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-text .logo-part-1 {
+    display: none;
+  }
+  .logo-text .logo-part-2 {
+    margin-left: 0;
   }
 }
 

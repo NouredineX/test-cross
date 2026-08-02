@@ -1,6 +1,8 @@
 export interface DetailedItinerary {
   tourId: string;
   focusKeyword: string;
+  focusKeywordFr: string;
+  focusKeywordEs: string;
   seoDescription: string;
   seoDescriptionFr: string;
   seoDescriptionEs: string;
@@ -125,6 +127,22 @@ const cityGuides: Record<string, {
     desc: 'Travel through the lush Draa Valley, home to millions of date palms and old clay fortresses. Reach the rocky desert dunes of Zagora, take a camel ride at sunset, and spend a peaceful night in a Berber desert camp under the stars.',
     descFr: 'Traversez la vallée du Draa avec ses palmeraies. Rejoignez les dunes du désert de Zagora, faites une balade à dos de chameau et passez la nuit dans un camp berbère.',
     descEs: 'Viaje a través del Valle del Draa. Llegue al desierto de Zagora, disfrute de un paseo en camello al atardecer y pase la noche en un campamento bereber.'
+  },
+  'Tangier': {
+    name: 'Tangier Gateway',
+    nameFr: 'Tanger la Porte',
+    nameEs: 'Tánger Puerta',
+    desc: 'Explore Tangier, the gateway to Africa. Walk through the historic Kasbah, visit the legendary Hercules Caves, and stroll along the lively corniche where the Mediterranean meets the Atlantic Ocean.',
+    descFr: 'Explorez Tanger, la porte de l\'Afrique. Visitez la kasbah historique, les célèbres grottes d\'Hercule et promenez-vous le long de la corniche où la Méditerranée rencontre l\'Atlantique.',
+    descEs: 'Explore Tánger, la puerta de entrada a África. Visite la histórica Kasbah, las legendarias cuevas de Hércules y pasee por el paseo marítimo donde el Mediterráneo se une al Atlántico.'
+  },
+  'Ifrane': {
+    name: 'Ifrane Alpine Town',
+    nameFr: 'Ifrane Ville Alpine',
+    nameEs: 'Ifrane Ciudad Alpina',
+    desc: 'Visit Ifrane, often called the Switzerland of Morocco. Walk through its clean streets, admire the alpine-style architecture, and see the famous stone lion monument carved by local artisans.',
+    descFr: 'Découvrez Ifrane, la Suisse du Maroc, connue pour son architecture de style alpin, ses parcs verdoyants et son célèbre monument du lion de pierre sculpté.',
+    descEs: 'Descubra Ifrane, la Suiza de Marruecos, conocida por su arquitectura de estilo alpino y el famoso monumento del león de piedra tallado.'
   }
 };
 
@@ -133,50 +151,47 @@ export const getTravelAdvisoryText = (focusKeyword: string, lang: string): strin
   if (lang === 'fr') {
     return `
       <h2>Conseils de Voyage Importants pour votre ${focusKeyword}</h2>
-      <p>Pour tirer le meilleur parti de votre voyage au Maroc, voici quelques recommandations de notre agence locale Travelling Through Morocco. Préparez vos bagages avec soin, car les températures varient énormément entre le jour et la nuit dans le désert ou en altitude.</p>
+      <p>Pour tirer le meilleur parti de votre voyage au Maroc, voici quelques recommandations de notre agence locale <b>travellingthroughmorocco.com</b>. Préparez vos bagages avec soin, car les températures varient énormément entre le jour et la nuit dans le désert ou en altitude.</p>
       
       <h3>1. Que faut-il emporter dans le désert ?</h3>
-      <p>Nous vous conseillons d'apporter des vêtements légers et respirants pour la journée, mais n'oubliez pas des vêtements chauds pour les nuits fraîches dans le désert. Un chapeau, des lunettes de soleil et une crème solaire haute protection sont indispensables pour faire face au soleil du Sahara. Une gourde réutilisable est également recommandée pour rester hydraté.</p>
+      <p>Lorsque vous réservez avec <b>travellingthroughmorocco.com</b>, nous vous conseillons d'apporter des vêtements légers et respirants pour la journée, mais n'oubliez pas des vêtements chauds pour les nuits fraîches dans le désert. Un chapeau, des lunettes de soleil et une crème solaire haute protection sont indispensables pour faire face au soleil du Sahara. Une gourde réutilisable est également recommandée pour rester hydraté.</p>
 
       <h3>2. Respect et Culture locale au Maroc</h3>
       <p>Le Maroc est un pays musulman accueillant et chaleureux. Pour respecter les coutumes locales, nous vous conseillons de vous habiller de manière pudique, en particulier lors de la visite de villages ruraux ou de sites historiques. Demandez toujours la permission avant de prendre en photo les habitants locaux.</p>
 
       <h3>3. Monnaie et Pourboires</h3>
-      <p>La monnaie officielle est le Dirham marocain (MAD). Bien que les cartes de crédit soient acceptées dans les grands hôtels et restaurants de Marrakech ou Casablanca, le liquide reste indispensable pour les petits achats dans les souks ou dans le désert. Le pourboire est une pratique courante au Maroc pour saluer un bon service.</p>
+      <p>La monnaie officielle est le Dirham marocain (MAD). Bien que les cartes de crédit soient acceptées dans les grands hôtels et restaurants de Marrakech ou Casablanca, le liquide reste indispensable pour les petits achats dans les souks ou dans le désert. Tous les circuits gérés par <b>travellingthroughmorocco.com</b> comprennent des véhicules climatisés privés et des chauffeurs agréés pour assurer votre confort et votre sécurité.</p>
     `;
   }
   
   if (lang === 'es') {
     return `
       <h2>Consejos Importantes para su viaje de ${focusKeyword}</h2>
-      <p>Para aprovechar al máximo su experiencia en Marruecos, aquí tiene algunas recomendaciones de nuestra agencia de viajes Travelling Through Morocco. Prepare sus maletas con cuidado para disfrutar de una estancia cómoda y segura.</p>
+      <p>Para aprovechar al máximo su experiencia en Marruecos, aquí tiene algunas recomendaciones de nuestra agencia de viajes <b>travellingthroughmorocco.com</b>. Prepare sus maletas con cuidado para disfrutar de una estancia cómoda y segura.</p>
 
       <h3>1. ¿Qué llevar al Desierto del Sahara?</h3>
-      <p>Recomendamos llevar ropa ligera y cómoda durante el día, pero no olvide abrigarse bien por la noche, ya que la temperatura en el desierto puede bajar drásticamente. Lleve gafas de sol, protector solar de alto factor y un sombrero para protegerse del sol. Es importante mantenerse hidratado durante todo el viaje.</p>
+      <p>Al planificar su viaje con <b>travellingthroughmorocco.com</b>, recomendamos llevar ropa ligera y cómoda durante el día, pero no olvide abrigarse bien por la noche, ya que la temperatura en el desierto puede bajar drásticamente. Lleve gafas de sol, protector solar de alto factor y un sombrero para protegerse del sol.</p>
 
       <h3>2. Respeto y Cultura Local</h3>
       <p>Marruecos es un país muy hospitalario. Para respetar la cultura local, vista de manera modesta, especialmente cuando visite áreas rurales o lugares históricos. Siempre es una buena costumbre pedir permiso antes de fotografiar a las personas locales.</p>
 
       <h3>3. Moneda y Propinas en Marruecos</h3>
-      <p>La moneda oficial es el Dirham marroquí (MAD). Aunque se aceptan tarjetas en establecimientos grandes de Marrakech o Casablanca, es necesario llevar dinero en efectivo para compras pequeñas en los mercados locales. Dar propina es una costumbre muy común en Marruecos para agradecer un buen servicio.</p>
+      <p>La moneda oficial es el Dirham marroquí (MAD). Aunque se aceptan tarjetas en establecimientos grandes de Marrakech o Casablanca, es necesario llevar dinero en efectivo para compras pequeñas en los mercados locales. Todos los tours operados por <b>travellingthroughmorocco.com</b> incluyen vehículos privados y chóferes profesionales para su tranquilidad.</p>
     `;
   }
 
   return `
     <h2>Important Travel Advisory for your ${focusKeyword}</h2>
-    <p>To get the absolute best experience out of your <b>${focusKeyword}</b>, we have compiled a set of essential tips and guidelines from our local tour guides. Planning ahead will ensure a comfortable, safe, and truly unforgettable adventure through Morocco's unique landscapes.</p>
+    <p>To get the absolute best experience out of your <b>${focusKeyword}</b>, we have compiled a set of essential tips and guidelines from our local tour guides at <b>travellingthroughmorocco.com</b>. Planning ahead will ensure a comfortable, safe, and truly unforgettable adventure through Morocco's unique landscapes.</p>
     
     <h3>1. What to Pack for the Sahara Desert</h3>
-    <p>The Sahara Desert is famous for its extreme temperatures. During the daytime, the sun is intense, so we recommend lightweight, breathable long-sleeve shirts and trousers to protect your skin. Sunglasses, a wide-brimmed hat, and high-factor sunscreen are absolutely essential. However, desert temperatures can drop rapidly after sunset. Even in the warmer months, night temperatures in Erg Chebbi can feel chilly, and in winter, they can drop close to freezing. Always bring warm layers, including a fleece jacket, thermal wear, and a warm beanie for your night in the camp.</p>
+    <p>The Sahara Desert is famous for its extreme temperatures. During the daytime, the sun is intense, so we recommend lightweight, breathable long-sleeve shirts and trousers to protect your skin. Sunglasses, a wide-brimmed hat, and high-factor sunscreen are absolutely essential. However, desert temperatures can drop rapidly after sunset. When planning your custom trip with <b>travellingthroughmorocco.com</b>, always bring warm layers, including a fleece jacket, thermal wear, and a warm beanie for your night in the camp.</p>
 
     <h3>2. Respecting Moroccan Culture & Customs</h3>
-    <p>Morocco is a peaceful, welcoming Islamic country known for its legendary hospitality. When traveling through rural villages, imperial medinas, or mountain passes, it is respectful to dress modestly. Both men and women should cover their shoulders and knees. When taking photos of local people, particularly in busy souks or remote villages, always ask for their permission first. Learning a few basic words in Moroccan Arabic (Darija), such as "Salam" (Hello) and "Shokran" (Thank you), goes a long way in showing respect and building friendly connections with the locals.</p>
+    <p>Morocco is a peaceful, welcoming Islamic country known for its legendary hospitality. When traveling through rural villages, imperial medinas, or mountain passes, it is respectful to dress modestly. Both men and women should cover their shoulders and knees. When taking photos of local people, particularly in busy souks or remote villages, always ask for their permission first.</p>
 
     <h3>3. Currency, Payments, and Tipping</h3>
-    <p>The official currency is the Moroccan Dirham (MAD). While credit cards are widely accepted in major hotels, riads, and upscale restaurants in Marrakech, Casablanca, and Fes, cash is still king in smaller towns, local souks, and desert oasis stations. We highly recommend carrying a sufficient amount of Dirhams in cash for small purchases, lunches, and beverages along the route. Tipping (Baksheesh) is deeply integrated into Moroccan culture. It is customary to tip drivers, camel guides, and restaurant staff to show appreciation for their hard work and dedication.</p>
-
-    <h3>4. Staying Hydrated and Safe</h3>
-    <p>Moroccan tap water is generally not recommended for drinking by foreign travelers. We strongly advise drinking bottled mineral water, which is cheap and widely available at every stop during your tour. Additionally, ensure you protect yourself from heatstroke by staying in the shade when possible and drinking water regularly, even if you do not feel thirsty. All our private 4x4 vehicles are equipped with air conditioning and first-aid kits, and our professional drivers are trained in route safety to guarantee a smooth travel experience.</p>
+    <p>The official currency is the Moroccan Dirham (MAD). While credit cards are widely accepted in major hotels, riads, and upscale restaurants in Marrakech, Casablanca, and Fes, cash is still king in smaller towns, local souks, and desert oasis stations. All tours operated by <b>travellingthroughmorocco.com</b> feature private air-conditioned vehicles and professional drivers to guarantee a smooth and premium travel experience.</p>
   `;
 };
 
@@ -194,7 +209,80 @@ export const getDetailedItinerary = (_tourId: string, tour: {
   departure: string;
   cities: string[];
 }): DetailedItinerary => {
-  const focusKeyword = `${tour.departure} to Merzouga desert tour`;
+  // Generate highly-specific focus keywords dynamically based on tour slug
+  let focusKeyword = 'Morocco desert tour';
+  let focusKeywordFr = 'circuit désert Maroc';
+  let focusKeywordEs = 'tour desierto Marruecos';
+
+  if (tour.slug.includes('essaouira')) {
+    focusKeyword = 'Marrakech to Essaouira day trip';
+    focusKeywordFr = "excursion Marrakech à Essaouira";
+    focusKeywordEs = 'excursión Marrakech a Essaouira';
+  } else if (tour.slug.includes('ouzoud')) {
+    focusKeyword = 'Marrakech to Ouzoud waterfalls day trip';
+    focusKeywordFr = "excursion Marrakech aux cascades d'Ouzoud";
+    focusKeywordEs = 'excursión Marrakech a cascadas de Ouzoud';
+  } else if (tour.slug.includes('chefchaouen') && tour.duration === 1) {
+    focusKeyword = 'Fes to Chefchaouen day trip';
+    focusKeywordFr = "excursion Fès à Chefchaouen";
+    focusKeywordEs = 'excursión Fez a Chefchaouen';
+  } else if (tour.slug.includes('ait-benhaddou')) {
+    focusKeyword = 'Marrakech to Ait Benhaddou day trip';
+    focusKeywordFr = "excursion Marrakech à Aït Benhaddou";
+    focusKeywordEs = 'excursión Marrakech a Ait Benhaddou';
+  } else if (tour.slug.includes('atlas-mountains')) {
+    focusKeyword = 'Marrakech to Atlas Mountains day trip';
+    focusKeywordFr = "excursion Marrakech aux montagnes de l'Atlas";
+    focusKeywordEs = 'excursión Marrakech a montañas del Atlas';
+  } else if (tour.slug.includes('zagora')) {
+    focusKeyword = 'Marrakech to Zagora desert tour';
+    focusKeywordFr = "circuit Marrakech au désert de Zagora";
+    focusKeywordEs = 'tour Marrakech al desierto de Zagora';
+  } else if (tour.slug.includes('tangier') && tour.slug.includes('15-days')) {
+    focusKeyword = '15 days Morocco grand tour from Tangier';
+    focusKeywordFr = "circuit Maroc de 15 jours depuis Tanger";
+    focusKeywordEs = 'tour de 15 días por Marruecos desde Tánger';
+  } else if (tour.slug.includes('11-days')) {
+    focusKeyword = '11 days Morocco desert tour from Casablanca';
+    focusKeywordFr = "circuit désert de 11 jours depuis Casablanca";
+    focusKeywordEs = 'tour de 11 días al desierto desde Casablanca';
+  } else if (tour.slug.includes('12-days')) {
+    focusKeyword = '12 days grand Morocco tour from Tangier';
+    focusKeywordFr = "grand tour du Maroc de 12 jours depuis Tanger";
+    focusKeywordEs = 'gran tour de 12 días por Marruecos desde Tánger';
+  } else if (tour.slug.includes('10-days')) {
+    focusKeyword = '10 days Morocco discovery tour';
+    focusKeywordFr = "circuit découverte du Maroc de 10 jours";
+    focusKeywordEs = 'tour de descubrimiento de 10 días por Marruecos';
+  } else if (tour.slug.includes('7-days')) {
+    focusKeyword = '7 days Morocco complete tour';
+    focusKeywordFr = "circuit complet du Maroc de 7 jours";
+    focusKeywordEs = 'tour completo de 7 días por Marruecos';
+  } else if (tour.slug.includes('5-days-off-road')) {
+    focusKeyword = '5 days off-road desert tour Marrakech';
+    focusKeywordFr = "circuit hors-piste de 5 jours depuis Marrakech";
+    focusKeywordEs = 'tour todoterreno de 5 días desde Marrakech';
+  } else if (tour.slug.includes('5-days')) {
+    focusKeyword = '5 days grand Morocco tour';
+    focusKeywordFr = "grand tour du Maroc de 5 jours";
+    focusKeywordEs = 'gran tour de 5 días por Marruecos';
+  } else if (tour.slug.includes('4-days')) {
+    focusKeyword = '4 days tour Marrakech to Fes';
+    focusKeywordFr = "circuit de 4 jours Marrakech à Fès";
+    focusKeywordEs = 'tour de 4 días de Marrakech a Fez';
+  } else if (tour.slug.includes('3-days')) {
+    focusKeyword = '3 days desert tour Marrakech to Merzouga';
+    focusKeywordFr = "circuit désert de 3 jours Marrakech à Merzouga";
+    focusKeywordEs = 'tour de 3 días al desierto de Marrakech a Merzouga';
+  } else if (tour.duration === 1) {
+    focusKeyword = `${tour.departure} day trip`;
+    focusKeywordFr = `excursion d'une journée depuis ${tour.departure}`;
+    focusKeywordEs = `excursión de un día desde ${tour.departure}`;
+  } else {
+    focusKeyword = `${tour.departure} to Sahara desert tour`;
+    focusKeywordFr = `circuit désert depuis ${tour.departure}`;
+    focusKeywordEs = `tour al desierto desde ${tour.departure}`;
+  }
 
   // Custom inclusions/exclusions based on tour type
   const isInDesertTour = tour.cities.includes('Merzouga') || tour.cities.includes('Zagora') || tour.slug.includes('desert');
@@ -238,13 +326,13 @@ export const getDetailedItinerary = (_tourId: string, tour: {
   const inclusionsEs = isDayTrip
     ? [
         `Transporte privado en cómodo 4x4 o minivan con aire acondicionado`,
-        `Conductor local profesional de habla inglesa/francesa/española`,
+        `Conductor local profesional de habla inglesa/con habla española`,
         `Combustible, peajes y tasas de aparcamiento`,
         `Recogida y regreso a su alojamiento`
       ]
     : [
         `Transporte privado en cómodo 4x4 o minivan con aire acondicionado`,
-        `Conductor local profesional de habla inglesa/francesa/española`,
+        `Conductor local profesional de habla inglesa/con habla española`,
         `Combustible y peajes de carretera`,
         `Alojamientos cómodos en riads/hoteles tradicionales (media pensión)`,
         isInDesertTour ? `Noche en campamento de lujo en el desierto del Sahara` : `Noches de hotel con cena y desayuno`,
@@ -341,6 +429,8 @@ export const getDetailedItinerary = (_tourId: string, tour: {
   return {
     tourId: tour.id,
     focusKeyword,
+    focusKeywordFr,
+    focusKeywordEs,
     seoDescription: `Book the custom ${tour.duration}-day ${tour.title} starting from ${tour.departure}. Complete itinerary with local driver, luxury riads, and authentic experiences.`,
     seoDescriptionFr: `Réservez le circuit de ${tour.duration} jours ${tour.titleFr} au départ de ${tour.departure}.`,
     seoDescriptionEs: `Reserve el tour de ${tour.duration} días ${tour.titleEs} saliendo de ${tour.departure}.`,

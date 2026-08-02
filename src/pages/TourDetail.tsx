@@ -15,16 +15,24 @@ export const TourDetail: React.FC = () => {
 
   // Focus keyword and page title updates for SEO
   const detailedItinerary = tour ? getDetailedItinerary(tour.id, tour) : null;
-  const focusKeyword = detailedItinerary ? detailedItinerary.focusKeyword : 'Morocco desert tour';
+  const focusKeyword = detailedItinerary
+    ? (currentLang === 'fr' ? detailedItinerary.focusKeywordFr : currentLang === 'es' ? detailedItinerary.focusKeywordEs : detailedItinerary.focusKeyword)
+    : 'Morocco desert tour';
+
+  const seoDescriptionText = detailedItinerary
+    ? (currentLang === 'fr' ? detailedItinerary.seoDescriptionFr : currentLang === 'es' ? detailedItinerary.seoDescriptionEs : detailedItinerary.seoDescription)
+    : 'Morocco desert tour details';
+
+  const tourTitle = tour ? (currentLang === 'fr' ? tour.titleFr : currentLang === 'es' ? tour.titleEs : tour.title) : '';
 
   useEffect(() => {
     if (tour && detailedItinerary) {
       // Update page title (Focus keyword at the beginning of the title)
-      document.title = `${focusKeyword}: ${tour.duration} Days ${tour.title} 2026`;
+      document.title = `${focusKeyword}: ${tour.duration} Days ${tourTitle} 2026`;
 
       // Update meta description
       let metaDescription = document.querySelector('meta[name="description"]');
-      const descText = detailedItinerary.seoDescription;
+      const descText = seoDescriptionText;
       
       if (!metaDescription) {
         metaDescription = document.createElement('meta');
@@ -33,7 +41,7 @@ export const TourDetail: React.FC = () => {
       }
       metaDescription.setAttribute('content', descText);
     }
-  }, [tour, detailedItinerary, focusKeyword]);
+  }, [tour, detailedItinerary, focusKeyword, seoDescriptionText, tourTitle]);
 
   if (!tour || !detailedItinerary) {
     return (

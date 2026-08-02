@@ -65,7 +65,7 @@ export const Tours: React.FC = () => {
           ) : (
             <div className="grid-3" id="all-tours-grid">
               {filteredTours.map((tour, idx) => (
-                <ScrollAnimation animation="fade-in" delay={(idx % 3) * 100} key={tour.id}>
+                <ScrollAnimation animation="fade-in" delay={(idx % 3) * 100} key={tour.id} id={tour.id}>
                   <TourCard tour={tour} />
                 </ScrollAnimation>
               ))}

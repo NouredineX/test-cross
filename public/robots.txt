@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://travellingthroughmorocco.com
+
+# Sitemaps
+Sitemap: https://travellingthroughmorocco.com/sitemap.xml

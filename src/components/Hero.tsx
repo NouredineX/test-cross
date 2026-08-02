@@ -15,13 +15,16 @@ export const Hero: React.FC = () => {
   return (
     <section className="hero" id="main-hero-section">
       <div className="hero-bg">
-        <img 
-          src="/images/1 (13).webp" 
-          alt="Sahara Desert Dunes Parallax" 
-          width="1920"
-          height="1280"
-          fetchPriority="high"
-        />
+        <picture>
+          <source media="(max-width: 768px)" srcSet="/images/1 (13)-mobile.webp" />
+          <img 
+            src="/images/1 (13).webp" 
+            alt="Sahara Desert Dunes Parallax" 
+            width="1920"
+            height="1280"
+            fetchPriority="high"
+          />
+        </picture>
         <div className="hero-overlay"></div>
       </div>
       

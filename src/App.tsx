@@ -24,19 +24,19 @@ const App: React.FC = () => {
         {/* Navigation Bar */}
         <Navbar />
 
-        {/* Page Content */}
-        <main style={{ flex: 1, paddingTop: '80px' }}>
-          <Suspense fallback={
-            <div className="loading-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh', color: 'var(--color-primary)' }}>
-              <div className="spinner" style={{ border: '4px solid rgba(200, 169, 110, 0.1)', borderLeftColor: 'var(--color-primary)', borderRadius: '50%', width: '40px', height: '40px', animation: 'spin 1s linear infinite' }}></div>
-              <style>{`
-                @keyframes spin {
-                  0% { transform: rotate(0deg); }
-                  100% { transform: rotate(360deg); }
-                }
-              `}</style>
-            </div>
-          }>
+        <Suspense fallback={
+          <div className="loading-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', color: 'var(--color-primary)' }}>
+            <div className="spinner" style={{ border: '4px solid rgba(200, 169, 110, 0.1)', borderLeftColor: 'var(--color-primary)', borderRadius: '50%', width: '40px', height: '40px', animation: 'spin 1s linear infinite' }}></div>
+            <style>{`
+              @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+              }
+            `}</style>
+          </div>
+        }>
+          {/* Page Content */}
+          <main style={{ flex: 1, paddingTop: '80px' }}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/tours" element={<Tours />} />
@@ -48,12 +48,11 @@ const App: React.FC = () => {
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
-          </Suspense>
-        </main>
+          </main>
 
-
-        {/* Footer Area */}
-        <Footer />
+          {/* Footer Area */}
+          <Footer />
+        </Suspense>
 
         {/* Floating Utilities */}
         <WhatsAppButton />

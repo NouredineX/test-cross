@@ -16,9 +16,9 @@ export const Hero: React.FC = () => {
     <section className="hero" id="main-hero-section">
       <div className="hero-bg">
         <picture>
-          <source media="(max-width: 768px)" srcSet="/images/1 (13)-mobile.webp" />
+          <source media="(max-width: 768px)" srcSet="/images/1-13-mobile.webp" />
           <img 
-            src="/images/1 (13).webp" 
+            src="/images/1-13.webp" 
             alt="Sahara Desert Dunes Parallax" 
             width="1920"
             height="1280"

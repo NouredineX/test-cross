@@ -297,7 +297,7 @@ export const tours: Tour[] = [
     departure: 'Marrakech',
     pricePerPerson: 55,
     currency: '€',
-    image: '1 (13).webp',
+    image: '1-13.webp',
     category: 'day-trip',
     highlights: ['Ait Benhaddou Kasbah', 'Tizi n\'Tichka Pass', 'Atlas Mountains', 'Ouarzazate'],
     highlightsFr: ['Kasbah Ait Benhaddou', 'Col Tizi n\'Tichka', 'Montagnes de l\'Atlas', 'Ouarzazate'],

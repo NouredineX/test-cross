@@ -43,7 +43,7 @@ export const Navbar: React.FC = () => {
       <div className="container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu} id="logo-link" style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
           <img 
-            src="/images/logo-icon.png" 
+            src="/images/logo-icon.webp" 
             alt="Travelling Through Morocco Logo" 
             width="31"
             height="38"

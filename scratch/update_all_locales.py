@@ -1,7 +1,7 @@
 import os
 import json
 
-locales_dir = r"n:\Antigravity\morocco view travel\src\locales"
+locales_dir = r"N:\Antigravity\Travelling through morocco\src\locales"
 
 # Translations to insert
 additions = {
@@ -118,8 +118,8 @@ def update_json_file(lang, file_path):
     data_str = json.dumps(data, ensure_ascii=False)
     
     # Replace agency name
-    data_str = data_str.replace("Travelling Through Morocco", "Morocco View Travel")
-    data_str = data_str.replace("Travelling through Morocco", "Morocco View Travel")
+    data_str = data_str.replace("Morocco View Travel", "Travelling Through Morocco")
+    data_str = data_str.replace("morocco view travel", "Travelling Through Morocco")
     
     # Replace Meknes headquarters with Merzouga
     data_str = data_str.replace("based in Meknes", "based in Rissani, Merzouga")

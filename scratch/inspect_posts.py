@@ -4,7 +4,7 @@ import sys
 # Set output encoding to UTF-8
 sys.stdout.reconfigure(encoding='utf-8')
 
-filepath = r'n:\Antigravity\morocco view travel\src\data\blogPosts.ts'
+filepath = r'N:\Antigravity\Travelling through morocco\src\data\blogPosts.ts'
 
 with open(filepath, 'r', encoding='utf-8') as f:
     text = f.read()

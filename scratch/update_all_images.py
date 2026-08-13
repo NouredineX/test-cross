@@ -2,7 +2,7 @@ import os
 import re
 
 # 1. Update Destinations
-destinations_file = r"N:\Antigravity\morocco view travel\src\data\destinations.ts"
+destinations_file = r"N:\Antigravity\Travelling through morocco\src\data\destinations.ts"
 with open(destinations_file, "r", encoding="utf-8") as f:
     dest_content = f.read()
 
@@ -28,7 +28,7 @@ with open(destinations_file, "w", encoding="utf-8") as f:
 print("Updated destinations.ts successfully!")
 
 # 2. Update Tours with Unique Images
-tours_file = r"N:\Antigravity\morocco view travel\src\data\tours.ts"
+tours_file = r"N:\Antigravity\Travelling through morocco\src\data\tours.ts"
 with open(tours_file, "r", encoding="utf-8") as f:
     tours_content = f.read()
 

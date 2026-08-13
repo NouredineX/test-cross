@@ -9,7 +9,7 @@ import time
 # Ensure UTF-8 output encoding
 sys.stdout.reconfigure(encoding='utf-8')
 
-filepath = r"n:\Antigravity\morocco view travel\src\data\blogPosts.ts"
+filepath = r"N:\Antigravity\Travelling through morocco\src\data\blogPosts.ts"
 
 def translate(text, target_lang):
     # Retry logic

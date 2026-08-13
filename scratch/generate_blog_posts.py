@@ -210,7 +210,7 @@ def make_paragraph(kw, topic_text, sentence_idx):
         f"Whether you want to book a private tour or travel solo, understanding the context of {kw} will help you significantly.",
         f"Many visitors asking about {kw} are surprised to learn how diverse the regions and local customs are.",
         f"We recommend checking our private <a href='/en/tours' class='internal-link'>Morocco desert tours</a> to explore the Sahara dunes.",
-        f"Feel free to <a href='/en/contact' class='internal-link'>contact Morocco View Travel</a> for a custom travel package.",
+        f"Feel free to <a href='/en/contact' class='internal-link'>contact Travelling Through Morocco</a> for a custom travel package.",
         f"You can also read verified reviews on <a href='https://www.tripadvisor.com' target='_blank' class='external-link'>TripAdvisor reviews</a> for peace of mind."
     ]
     return f"{sentences[sentence_idx % len(sentences)]} {topic_text} This is essential when planning details of your travel route."
@@ -287,7 +287,7 @@ def generate_article_content(title, kw, category):
     val_box = f"""
     <div class="value-box">
       <strong>Important Warning for {kw.title()}</strong>
-      <p>Always verify operating hours before traveling. Some local sites or Medina gates might close early during holidays or religious festivals. We recommend checking with Morocco View Travel ahead of time.</p>
+      <p>Always verify operating hours before traveling. Some local sites or Medina gates might close early during holidays or religious festivals. We recommend checking with Travelling Through Morocco ahead of time.</p>
     </div>
     """
     
@@ -311,7 +311,7 @@ def generate_article_content(title, kw, category):
     verdict = f"""
     <div class="expert-verdict-new">
       <h3>Conclusion: Our Expert Verdict on {kw.title()}</h3>
-      <p>Ultimately, exploring {kw} is one of the most rewarding travel experiences you can have in North Africa. The rich mix of hospitality, landscape, and history creates memories that last a lifetime. Book your custom tour with Morocco View Travel today to ensure a professional, comfortable journey!</p>
+      <p>Ultimately, exploring {kw} is one of the most rewarding travel experiences you can have in North Africa. The rich mix of hospitality, landscape, and history creates memories that last a lifetime. Book your custom tour with Travelling Through Morocco today to ensure a professional, comfortable journey!</p>
     </div>
     """
     
@@ -352,7 +352,7 @@ for post_conf in blog_configs:
         "contentZh": "",
         "image": post_conf["image"],
         "date": post_conf["date"],
-        "author": "Morocco View Travel",
+        "author": "Travelling Through Morocco",
         "category": post_conf["category"],
         "readTime": post_conf["readTime"],
         "focusKeyword": post_conf["focusKeyword"]
@@ -365,7 +365,7 @@ export const blogPosts: BlogPost[] = {json.dumps(output_posts, indent=2)};
 """
 
 # Let's write the file directly
-target_path = r"n:\Antigravity\morocco view travel\src\data\blogPosts.ts"
+target_path = r"N:\Antigravity\Travelling through morocco\src\data\blogPosts.ts"
 with open(target_path, "w", encoding="utf-8") as f:
     f.write(ts_content)
 

@@ -5,7 +5,7 @@ import sys
 # Ensure UTF-8 output encoding
 sys.stdout.reconfigure(encoding='utf-8')
 
-filepath = r"n:\Antigravity\morocco view travel\src\data\blogPosts.ts"
+filepath = r"N:\Antigravity\Travelling through morocco\src\data\blogPosts.ts"
 
 # Pre-defined translations for the 23 posts
 translated_data = {

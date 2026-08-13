@@ -1,17 +1,17 @@
 import os
 import json
 
-locales_dir = r"N:\Antigravity\morocco view travel\src\locales"
+locales_dir = r"N:\Antigravity\Travelling through morocco\src\locales"
 
 translations = {
     "en": {
         "about": {
             "storySubtitle": "Local Expert Morocco Travel Agency",
-            "tripAdvisorTitle": "Morocco View Travel TripAdvisor Rating",
+            "tripAdvisorTitle": "Travelling Through Morocco TripAdvisor Rating",
             "tripAdvisorDesc": "Based on verified traveler reviews from around the globe. Proud to deliver exceptional service and unforgettable desert adventures.",
             "teamTitle": "Our Team",
             "teamSubtitle": "Local Experts",
-            "teamDesc": "The passionate travelers and guides behind Morocco View Travel.",
+            "teamDesc": "The passionate travelers and guides behind Travelling Through Morocco.",
             "roles": {
                 "owner": "Founder & Managing Director",
                 "driver": "Professional Driver & Desert Guide",
@@ -37,11 +37,11 @@ translations = {
     "fr": {
         "about": {
             "storySubtitle": "Agence de Voyage Experte Locale au Maroc",
-            "tripAdvisorTitle": "Note TripAdvisor de Morocco View Travel",
+            "tripAdvisorTitle": "Note TripAdvisor de Travelling Through Morocco",
             "tripAdvisorDesc": "Basé sur des avis de voyageurs vérifiés du monde entier. Fiers de fournir un service exceptionnel et des aventures inoubliables dans le désert.",
             "teamTitle": "Notre Équipe",
             "teamSubtitle": "Experts Locaux",
-            "teamDesc": "Les passionnés et guides derrière Morocco View Travel.",
+            "teamDesc": "Les passionnés et guides derrière Travelling Through Morocco.",
             "roles": {
                 "owner": "Fondateur & Directeur Général",
                 "driver": "Chauffeur Professionnel & Guide du Désert",
@@ -67,11 +67,11 @@ translations = {
     "es": {
         "about": {
             "storySubtitle": "Agencia de Viajes Experta Local en Marruecos",
-            "tripAdvisorTitle": "Calificación de TripAdvisor de Morocco View Travel",
+            "tripAdvisorTitle": "Calificación de TripAdvisor de Travelling Through Morocco",
             "tripAdvisorDesc": "Basado en opiniones verificadas de viajeros de todo el mundo. Orgullosos de ofrecer un servicio excepcional y aventuras inolvidables en el desierto.",
             "teamTitle": "Nuestro Equipo",
             "teamSubtitle": "Expertos Locales",
-            "teamDesc": "Los apasionados viajeros y guías detrás de Morocco View Travel.",
+            "teamDesc": "Los apasionados viajeros y guías detrás de Travelling Through Morocco.",
             "roles": {
                 "owner": "Fundador y Director Ejecutivo",
                 "driver": "Conductor Profesional y Guía del Desierto",
@@ -97,11 +97,11 @@ translations = {
     "it": {
         "about": {
             "storySubtitle": "Agenzia di Viaggi Esperta Locale in Marocco",
-            "tripAdvisorTitle": "Valutazione TripAdvisor di Morocco View Travel",
+            "tripAdvisorTitle": "Valutazione TripAdvisor di Travelling Through Morocco",
             "tripAdvisorDesc": "Basato su recensioni verificate di viaggiatori da tutto il mondo. Orgogliosi di offrire un servizio eccezionale e avventure indimenticabili nel deserto.",
             "teamTitle": "Il Nostro Team",
             "teamSubtitle": "Esperti Locali",
-            "teamDesc": "I viaggiatori e le guide appassionate dietro Morocco View Travel.",
+            "teamDesc": "I viaggiatori e le guide appassionate dietro Travelling Through Morocco.",
             "roles": {
                 "owner": "Fondatore e Direttore Generale",
                 "driver": "Autista Professionista e Guida del Deserto",
@@ -127,11 +127,11 @@ translations = {
     "ja": {
         "about": {
             "storySubtitle": "モロッコ現地専門旅行代理店",
-            "tripAdvisorTitle": "Morocco View Travelトリップアドバイザー評価",
+            "tripAdvisorTitle": "Travelling Through Moroccoトリップアドバイザー評価",
             "tripAdvisorDesc": "世界中の検証済み旅行者のレビューに基づいています。優れたサービスと忘れられない砂漠の冒険を提供することを誇りに思っています。",
             "teamTitle": "私たちのチーム",
             "teamSubtitle": "地元のエキスパート",
-            "teamDesc": "Morocco View Travelを支える情熱的なガイドとチーム。",
+            "teamDesc": "Travelling Through Moroccoを支える情熱的なガイドとチーム。",
             "roles": {
                 "owner": "創業者兼代表取締役",
                 "driver": "プロドライバー＆砂漠ガイド",
@@ -157,11 +157,11 @@ translations = {
     "zh": {
         "about": {
             "storySubtitle": "摩洛哥本地专家旅行社",
-            "tripAdvisorTitle": "Morocco View Travel 猫途鹰 (TripAdvisor) 评分",
+            "tripAdvisorTitle": "Travelling Through Morocco 猫途鹰 (TripAdvisor) 评分",
             "tripAdvisorDesc": "基于来自世界各地真实旅行者的验证评价。我们为能够提供卓越的服务和难忘的沙漠冒险而感到自豪。",
             "teamTitle": "我们的团队",
             "teamSubtitle": "本地专家",
-            "teamDesc": "Morocco View Travel 背后充满热情的导游与服务团队。",
+            "teamDesc": "Travelling Through Morocco 背后充满热情的导游与服务团队。",
             "roles": {
                 "owner": "创始人兼总经理",
                 "driver": "专业司机兼沙漠导游",

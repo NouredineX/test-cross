@@ -80,7 +80,7 @@ export default function WpDashboard() {
 
   // GitHub Integration Settings
   const [githubToken, setGithubToken] = useState('');
-  const [githubRepo, setGithubRepo] = useState('NouredineX/morocco-view-travel');
+  const [githubRepo, setGithubRepo] = useState('NouredineX/test-cross');
   const [gitStatus, setGitStatus] = useState('');
 
   // Editor States
@@ -134,7 +134,7 @@ export default function WpDashboard() {
 
     // Load GitHub settings
     const savedToken = localStorage.getItem('wp_github_token') || '';
-    const savedRepo = localStorage.getItem('wp_github_repo') || 'NouredineX/morocco-view-travel';
+    const savedRepo = localStorage.getItem('wp_github_repo') || 'NouredineX/test-cross';
     setGithubToken(savedToken);
     setGithubRepo(savedRepo);
   }, []);

@@ -11,6 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Verify repository identity
+        run: |
+          if [ "${{ github.repository }}" != "NouredineX/test-cross" ]; then
+            echo "ERROR: Wrong repository. Deployment blocked."
+            exit 1
+          fi
+
       - name: Checkout Code
         uses: actions/checkout@v4
 
@@ -30,13 +37,11 @@ jobs:
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.TEST }}
-          ARGS: "-rlgoDzvO --delete"
+          ARGS: "-rlgoDzvO"
           SOURCE: "./"
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
           REMOTE_USER: ${{ secrets.SERVER_USER }}
-
           TARGET: "/opt/antigravity/travellingthroughmorocco.com/"
-
           EXCLUDE: "/node_modules/, /.git/, /.github/, /scratch/"
 
       - name: Restart Travelling Through Morocco

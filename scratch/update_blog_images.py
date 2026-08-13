@@ -1,7 +1,7 @@
 import re
 import os
 
-filepath = r'n:\Antigravity\morocco view travel\src\data\blogPosts.ts'
+filepath = r'N:\Antigravity\Travelling through morocco\src\data\blogPosts.ts'
 
 with open(filepath, 'r', encoding='utf-8') as f:
     content = f.read()
